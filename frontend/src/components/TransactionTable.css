@@ -1,0 +1,176 @@
+.transactions-container {
+  margin-top: 35px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.transactions-header h2 {
+  margin: 0;
+  color: #111827;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  background: white;
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #6366f1;
+}
+
+.filter-button,
+.clear-button {
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.filter-button {
+  background: #6366f1;
+  color: white;
+}
+
+.clear-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 750px;
+}
+
+.transaction-table th {
+  background: #f3f4f6;
+  color: #374151;
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.transaction-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+.transaction-table tr:hover {
+  background: #f9fafb;
+}
+
+.income {
+  color: #16a34a !important;
+  font-weight: 600;
+}
+
+.expense {
+  color: #dc2626 !important;
+  font-weight: 600;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  border: none;
+  padding: 7px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-button {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+.delete-button {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.save-button {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.cancel-button {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.edit-input,
+.edit-select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.pagination button {
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #d1d5db;
+  cursor: not-allowed;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
+}
+
+.error-message {
+  color: #dc2626;
+  margin-bottom: 15px;
+}
