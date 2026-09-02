@@ -1,0 +1,295 @@
+/* =========================================
+   CHART CONTAINER
+========================================= */
+
+.charts-container {
+  display: grid;
+
+  grid-template-columns:
+    0.85fr 1.15fr;
+
+  gap: 22px;
+
+  margin-bottom: 35px;
+}
+
+
+/* =========================================
+   CHART CARD
+========================================= */
+
+.chart-card {
+  position: relative;
+
+  min-height: 420px;
+
+  padding: 25px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(
+      255,
+      255,
+      255,
+      0.74
+    );
+
+  backdrop-filter:
+    blur(18px);
+
+  -webkit-backdrop-filter:
+    blur(18px);
+
+  border: 1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.85
+    );
+
+  box-shadow:
+    0 15px 40px
+    rgba(
+      15,
+      23,
+      42,
+      0.07
+    );
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.chart-card:hover {
+
+  transform:
+    translateY(-5px);
+
+  box-shadow:
+    0 20px 45px
+    rgba(
+      79,
+      70,
+      229,
+      0.13
+    );
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.chart-header {
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-start;
+
+  margin-bottom: 20px;
+
+}
+
+
+.chart-label {
+
+  color:
+    #6366f1;
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    1.2px;
+
+}
+
+
+.chart-header h2 {
+
+  margin:
+    6px 0 4px;
+
+  color:
+    #111827;
+
+  font-size:
+    21px;
+
+  font-weight:
+    800;
+
+}
+
+
+.chart-header p {
+
+  margin: 0;
+
+  color:
+    #94a3b8;
+
+  font-size:
+    12px;
+
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.chart-icon {
+
+  display: flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  width:
+    44px;
+
+  height:
+    44px;
+
+  border-radius:
+    13px;
+
+  background:
+    rgba(
+      99,
+      102,
+      241,
+      0.1
+    );
+
+  color:
+    #6366f1;
+
+  font-size:
+    19px;
+
+  font-weight:
+    800;
+
+}
+
+
+/* =========================================
+   DOUGHNUT
+========================================= */
+
+.doughnut-wrapper {
+
+  position:
+    relative;
+
+  height:
+    310px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+}
+
+
+/* =========================================
+   BAR CHART
+========================================= */
+
+.bar-wrapper {
+
+  position:
+    relative;
+
+  height:
+    310px;
+
+}
+
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.chart-empty {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  height:
+    100%;
+
+  color:
+    #94a3b8;
+
+  font-size:
+    14px;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .charts-container {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .chart-card {
+
+    padding:
+      18px;
+
+  }
+
+
+  .doughnut-wrapper,
+  .bar-wrapper {
+
+    height:
+      270px;
+
+  }
+
+}
